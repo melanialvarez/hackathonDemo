@@ -1,0 +1,14 @@
+{
+	"credentials": {
+		"peers": [{
+			"api_host": "127.0.0.1",
+			"api_port": 7050,
+			"type": "peer",
+			"id": "vp0"
+		}],
+		"users": [{
+			"enrollId": "alice",
+			"enrollSecret": "CMS10pEQlB16"
+		}]
+	}
+}

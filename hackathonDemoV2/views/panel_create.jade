@@ -1,0 +1,33 @@
+
+#createPanel(hidden).panel
+	h1 Create Transaction
+	hr
+	
+	#innerWrap
+		
+		form(action="/create" method="POST")#createform
+			legend 
+				select(name="accountNumFrom") 
+					option(value="38" disabled="disabled" selected="selected") From
+					option(value="01-000-3130-0000-000") 01-000-3130-0000-000
+					option(value="01-000-4130-0000-000") 01-000-4130-0000-000
+					
+			
+
+			br
+			legend 
+				select(name="accountNumTo") 
+					option(value="38" disabled="disabled" selected="selected") To
+					option(value="01-000-4130-0000-000") 01-000-4130-0000-000
+					option(value="01-000-3130-0000-000") 01-000-3130-0000-000
+
+
+		
+			br
+			legend 
+				input(type='number' name='amount' placeholder="Amount" ) 
+
+			br
+			button(type="button")#submit
+				span.fa.fa-check &nbsp;&nbsp;
+				span CREATE
